@@ -93,11 +93,6 @@ Instructions:
 	4.	If a specific format is requested, adhere to it strictly.
 	5.	Include examples or cases only if explicitly mentioned in the sources.
 
-Response Format:
-	1.	Definition of the concept or topic
-	2.	Key features or related details
-	3.	Examples or cases based on the provided sources
-
 Limit:
     1. Responses must not exceed 1,500 characters.
     2. Your response must be written in Korean.
