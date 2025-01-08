@@ -2,3 +2,4 @@
 .env
 *.xlsx
 !data/problem.xlsx
+.DS_Store
