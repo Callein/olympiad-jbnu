@@ -14,7 +14,7 @@ def generate_embedding(text, model):
 
 if __name__ == "__main__":
     # 모델 로드 (Hugging Face의 사전 학습된 모델)
-    model_name = "all-MiniLM-L6-v2"  # 경량화된 무료 모델
+    model_name = "all-MiniLM-L6-v2"
     model = SentenceTransformer(model_name)
 
     # 데이터 로드
