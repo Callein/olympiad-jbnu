@@ -127,6 +127,8 @@ def add_rag(question, context_retriever):
     수정사항
     - 외부에서 전달받은 ContextRetriever를 사용합니다. (모델을 한번만 로드하기 위함)
     - FAISS를 사용해 질문과 관련된 컨텍스트를 검색하고 결합하도록 만들었습니다.
+        - 질문의 벡터값과 컨텍스트 (배경지식)이 연결되어있음.
+        - 질문이 들어오면, 해당 질문의 벡터값과 인덱싱되어있는 질문의 벡터값과 비교 후 해당 컨텍스트를 리턴
     """
     # ContextRetriever 초기화 (임베딩 파일 경로 지정)
     context = context_retriever.get_related_contexts(question)
@@ -157,4 +159,3 @@ if __name__ == "__main__":
     context_retriever = ContextRetriever(embedding_file, model)
 
     process_with_openai(data, base_url, context_retriever)
-    # process_with_openai_with_context(data, base_url, context_builder)
