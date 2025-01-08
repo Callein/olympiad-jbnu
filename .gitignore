@@ -1,0 +1,4 @@
+.venv
+.env
+*.xlsx
+!data/problem.xlsx
